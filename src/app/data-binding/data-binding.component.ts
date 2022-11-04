@@ -13,6 +13,9 @@ export class DataBindingComponent{
   valorAtual: string = "";
   valorSalvo: string = "";
   isMouseOver: boolean = false;
+  nomeDoCurso: string = "Angular";
+  valorInicial: number = 100;
+  novoValor: string = "{}";
 
   salvarConteudo(valor: string){
     this.valorSalvo = valor;
@@ -38,5 +41,10 @@ export class DataBindingComponent{
 
   mouseOut(){
     this.isMouseOver = !this.isMouseOver;
+  }
+
+  onMudouValor(event: any){
+    this.novoValor = JSON.stringify(event);
+
   }
 }

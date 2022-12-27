@@ -28,12 +28,10 @@
       <div class="alert {{ classe.value }}" role="alert">Cor mudar de acordo com a classe selecionada</div>
       <div class="alert alert-danger" [style.display]="classe.value == 'alert-danger' ? 'block' : 'none'" role="alert">Este texto aparece somente caso seja selecionado perigo</div>
 
-
       <div class="alert" [class.alert-success]="classe.value == 'alert-success'" role="alert">Sucesso</div>
       <div class="alert" [class.alert-info]="classe.value == 'alert-info'" role="alert">Info</div>
       <div class="alert" [class.alert-warning]="classe.value == 'alert-warning'" role="alert">Alerta</div>
       <div class="alert" [class.alert-danger]="classe.value == 'alert-danger'" role="alert">Perigo</div>
-
     </div>
   </article>
 </section>
